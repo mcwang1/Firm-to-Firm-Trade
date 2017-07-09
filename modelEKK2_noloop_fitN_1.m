@@ -506,4 +506,3 @@ title('Customers in Belgium per French Exporter, Conditional')
 xlabel('number exporting to Belgium and elsewhere');
 ylabel('customers in Belgium per exporter, conditional');
 legend('Data','Model');
-legend('Data','Model');
