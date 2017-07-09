@@ -461,14 +461,13 @@ pause
 
 %%
 
-l = loglog(D_NcDE(noFR),D_RcDE_over_NcDE_FR(noFR),'kx', ...
+figure(1)
+loglog(D_NcDE(noFR),D_RcDE_over_NcDE_FR(noFR),'kx', ...
     NveccDE(noFR)',M_RcDE_over_NcDE_FR(noFR),'rs');
-hold on;
 title('Customers in Germany per French Exporter, Conditional')
 xlabel('number exporting to Germany and elsewhere');
 ylabel('customers in Germany per exporter, conditional');
 legend('Data','Model');
-hold off;
 pause
 
 % Belgium
@@ -503,13 +502,8 @@ M_RcBE_over_NcBE_FR = RveccBE' ./ NveccBE';
 
 l = loglog(D_NcBE(noFR),D_RcBE_over_NcBE_FR(noFR),'kx', ...
     NveccBE(noFR)',M_RcBE_over_NcBE_FR(noFR),'rs');
-hold on;
 title('Customers in Belgium per French Exporter, Conditional')
 xlabel('number exporting to Belgium and elsewhere');
 ylabel('customers in Belgium per exporter, conditional');
 legend('Data','Model');
-hold off;
-
-
-
-
+legend('Data','Model');
